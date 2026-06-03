@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #0F172A 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-wrapper {
+    width: 100%;
+    max-width: 440px;
+    padding: 24px;
+}
+
+.auth-card {
+    background: #1E293B;
+    border-radius: 24px;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.5), 0 8px 10px -6px rgb(0 0 0 / 0.4);
+    padding: 40px;
+    border: 1px solid #334155;
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.auth-header img {
+    height: 60px;
+    margin-bottom: 16px;
+}
+
+.auth-header h2 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #F1F5F9;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+
+.auth-header p {
+    font-size: 15px;
+    color: #94A3B8;
+}
+
+.auth-form .form-group {
+    margin-bottom: 20px;
+}
+
+.auth-form label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #CBD5E1;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    background-color: #0F172A;
+    color: #F1F5F9;
+}
+
+.auth-form input:focus {
+    outline: none;
+    border-color: #34D399;
+    background-color: #1E293B;
+    box-shadow: 0 0 0 4px rgba(52, 211, 153, 0.2);
+}
+
+/* Form validation feedback */
+.auth-form .input-error {
+    border-color: #EF4444 !important;
+    background-color: rgba(239, 68, 68, 0.1) !important;
+}
+
+.auth-form .input-success {
+    border-color: #34D399 !important;
+}
+
+.auth-card {
+    animation: cardFadeIn 0.6s ease;
+}
+
+@keyframes cardFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes rippleEffect {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(135deg, #34D399 0%, #10B981 100%);
+    color: #0F172A;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 10px 15px -3px rgba(52, 211, 153, 0.4);
+}
+
+.alert {
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.alert-error {
+    background: #fef2f2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}
+
+.alert-success {
+    background: #ecfdf5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+}
+
+.switch {
+    margin-top: 24px;
+    font-size: 14px;
+    text-align: center;
+    color: #94A3B8;
+}
+
+.switch a {
+    color: #34D399;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.switch a:hover {
+    color: #6EE7B7;
+    text-decoration: underline;
+}
